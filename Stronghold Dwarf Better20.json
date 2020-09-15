@@ -1,0 +1,155 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "STRONGHOLD",
+				"full": "Dwarf (Stronghold)",
+				"abbreviation": "Stronghold",
+				"authors": [
+					"Nihiraz_from_GMGuild"
+				],
+				"convertedBy": [
+					"Nihiraz_from_GMGuild"
+				]
+			}
+		],
+		"dateAdded": 1570535687,
+		"dateLastModified": 1570535687
+	},
+	"race": [
+		{
+			"name": "Dwarf",
+			"source": "PHB",
+			"page": 18,
+			"size": "M",
+			"speed": 25,
+			"ability": [
+				{
+					"con": 2
+				}
+			],
+			"darkvision": 60,
+			"traitTags": [
+				"Damage Resistance",
+				"Weapon Proficiency",
+				"Tool Proficiency",
+				"Skill Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"dwarvish": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "races/dwarf.mp3"
+			},
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Most dwarves are lawful, believing firmly in the benefits of a well-ordered society. They tend toward good as well, with a strong sense of fair play and a belief that everyone deserves to share in the benefits of a just order."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
+					]
+				},
+				{
+					"name": "Speed",
+					"entries": [
+						"Your speed is not reduced by wearing heavy armor."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"You have advantage on saving throws against poison, and you have resistance against poison damage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Dwarven Combat Training",
+					"entries": [
+						"You have proficiency with the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Tool Proficiency",
+					"entries": [
+						"You gain proficiency with the artisan's tools of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Stonecunning",
+					"entries": [
+						"Whenever you make an Intelligence ({@skill History}) check related to the origin of stonework, you are considered proficient in the {@skill History} skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
+					],
+					"type": "entries"
+				}
+			],
+			"subraces": [
+				{
+					"name": "Stronghold",
+					"source": "STRONGHOLD",
+					"page": 1,
+					"ability": [
+						{
+							"int": 1
+						}
+					],
+					"entries": [
+						{
+							"name": "Advanced Tool Proficiency",
+							"entries": [
+								"When you choose a tool proficiency for the Tool Proficiency trait, you can choose from any artisan's tools."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Familiarity with the Arcane",
+							"entries": [
+								"You have advantage in all Intelligence (Arcana) checks used to identify a magical item, spell, or other magical effects."
+							],
+							"type": "entries"
+						}
+					]
+                }
+            ]
+        }
+	]
+}
