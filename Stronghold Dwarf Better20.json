@@ -41,11 +41,6 @@
 					"dwarvish": true
 				}
 			],
-			"toolProficiencies": [
-				{
-					"anyStandard": 1
-				}
-			],
 			"soundClip": {
 				"type": "internal",
 				"path": "races/dwarf.mp3"
