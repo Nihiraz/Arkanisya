@@ -45,7 +45,8 @@
 						"from": [
 							"perception",
 							"survival"
-						]
+						],
+						"count": 1
 					}
 				}
 			],
@@ -128,7 +129,7 @@
 					],
 					"traitTags": [
 						"Weapon Proficiency",
-                        "Skill Proficiency",
+                       				"Skill Proficiency",
 						"Uncommon Race"
 					],
 					"entries": [
