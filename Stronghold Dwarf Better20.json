@@ -13,8 +13,8 @@
 				]
 			}
 		],
-		"dateAdded": 1570535687,
-		"dateLastModified": 1570535687
+		"dateAdded": 1570535688,
+		"dateLastModified": 1570535688
 	},
 	"race": [
 		{
@@ -119,6 +119,7 @@
 			],
 			"subraces": [
 				{
+
 					"name": "Stronghold",
 					"source": "STRONGHOLD",
 					"page": 1,
@@ -127,24 +128,33 @@
 							"int": 1
 						}
 					],
+					"heightAndWeight": {
+						"baseHeight": 48,
+						"heightMod": "2d4",
+						"baseWeight": 130,
+						"weightMod": "2d6"
+					},
+					"traitTags": [
+						"Uncommon Race"
+					],
 					"entries": [
-						{
-							"name": "Advanced Tool Proficiency",
-							"entries": [
-								"When you choose a tool proficiency for the Tool Proficiency trait, you can choose from any artisan's tools."
-							],
-							"type": "entries"
-						},
 						{
 							"name": "Familiarity with the Arcane",
 							"entries": [
 								"You have advantage in all Intelligence (Arcana) checks used to identify a magical item, spell, or other magical effects."
 							],
 							"type": "entries"
+						},
+						{
+							"name": "Advanced Tool Proficiency",
+							"entries": [
+								"When you choose a tool proficiency for the Tool Proficiency trait, you can choose from any artisan's tools."
+							],
+							"type": "entries"
 						}
 					]
-                }
-            ]
-        }
+				}
+			]
+		}
 	]
 }
