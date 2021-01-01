@@ -1,0 +1,116 @@
+{
+	"name": "Gnilvory",
+	"size": "L",
+	"type": "undead",
+	"source": "NihirazNotebookofCreatures",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 15,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"formula": "8d10 + 8",
+		"average": 52
+	},
+	"speed": {
+		"walk": 40
+	},
+	"str": 18,
+	"dex": 12,
+	"con": 13,
+	"int": 5,
+	"wis": 13,
+	"cha": 11,
+	"passive": 13,
+	"cr": "3",
+	"fluff": {
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://i.pinimg.com/564x/aa/8f/fe/aa8ffe47e768e7702ced7cb0317661fc.jpg"
+				}
+			}
+		]
+	},
+	"shortName": true,
+	"senses": [
+		"darkvision 120 ft."
+	],
+	"senseTags": [
+		"SD"
+	],
+	"environment": [
+		"arctic",
+		"underdark"
+	],
+	"skill": {
+		"perception": "+3",
+		"intimidation": "+2"
+	},
+	"immune": [
+		"poison"
+	],
+	"conditionImmune": [
+		"exhaustion",
+		"poisoned"
+	],
+	"trait": [
+		{
+			"name": "Keen Hearing and Smell",
+			"entries": [
+				"The gnilvory has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+			]
+		},
+		{
+			"name": "Pack Tactics",
+			"entries": [
+				"The gnilvory has advantage on an attack roll against a creature if at least one of the gnilvory's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+			]
+		},
+		{
+			"name": "Undead Fortitude",
+			"entries": [
+				"If damage reduces the gnilvory to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the gnilvory drops to 1 hit point instead."
+			]
+		}
+	],
+	"traitTags": [
+		"Keen Senses",
+		"Pack Tactics",
+		"Undead Fortitude"
+	],
+	"action": [
+		{
+			"name": "Bite",
+			"entries": [
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+			]
+		},
+		{
+			"name": "Stinger",
+			"entries": [
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage. The target must make a {@dc 15} Constitution saving throw, taking 14 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one."
+			]
+		}
+	],
+	"miscTags": [
+		"MW"
+	],
+	"conditionInflict": [
+		"prone"
+	],
+	"damageTags": [
+		"P",
+		"I"
+	],
+	"tokenUrl": "https://i.imgur.com/HQvZGdG.png"
+}
