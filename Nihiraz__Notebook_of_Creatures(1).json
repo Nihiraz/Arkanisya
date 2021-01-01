@@ -1,0 +1,611 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "NihirazNotebookofCreatures",
+				"abbreviation": "NNC",
+				"full": "Nihiraz' Notebook of Creatures",
+				"url": "",
+				"authors": [
+					"Nihiraz"
+				],
+				"convertedBy": [
+					"Nihiraz"
+				]
+			}
+		],
+		"dateAdded": 1609531316,
+		"dateLastModified": 1609531316
+	},
+	"monster": [
+		{
+			"name": "Cannoneer Guardian",
+			"shortName": "guardian",
+			"source": "NihirazNotebookofCreatures",
+			"size": "L",
+			"type": "construct",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				},
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					],
+					"condition": "when Core of the Guardian is active"
+				}
+			],
+			"hp": {
+				"formula": "19d10 + 114",
+				"average": 218
+			},
+			"speed": {
+				"walk": {
+					"number": 20,
+					"condition": "(30 ft. when Core of the Guardian is active)"
+				}
+			},
+			"str": 20,
+			"dex": 9,
+			"con": 23,
+			"int": 10,
+			"wis": 13,
+			"cha": 3,
+			"save": {
+				"str": "+9",
+				"con": "+10"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"blindsight 10 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					]
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"Understands commands in any language but can't speak"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The guardian regains 15 hit points at the start of its turn if it has at least 1 hit point when Core of the Guardian isn't active."
+					]
+				},
+				{
+					"name": "Heated Body",
+					"entries": [
+						"When Core of the Guardian is active, a creature that touches the guardian or hits it with a melee attack while within 5 feet of it takes 5 ({@damage 1d10}) fire damage."
+					]
+				},
+				{
+					"name": "Core of the Guardain (Mythic Trait; Recharges after a Short or Long Rest).",
+					"entries": [
+						"When the guardian is reduced to 0 hit points, it doesn't die or fall {@condition unconscious}. Instead, the damage destroys itsheavy armor plates, revealing its burning arcane core, the guardian regains 218 hit points and moves up to its speed without provoking opportunity attacks.. While this trait is active the guardian has an AC of 16, a base walking speed of 30 ft., gains the Heated Body trait and loses the Regeneration trait. If it finishes a short or long rest, the guardian repairs its armor and loses this trait."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The guardian makes two attack."
+					]
+				},
+				{
+					"name": "Fist",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Cannon",
+					"entries": [
+						"{@atk rs} {@hit 8} to hit, range 60/240 ft., one target. {@h}11 ({@damage 2d6 + 4}) fire damage."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The guardian makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Fist",
+					"entries": [
+						"The guardian makes a fist attack."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The guardian moves up to its speed without provoking opportunity attacks."
+					]
+				}
+			],
+			"mythicHeader": [
+				"If the guardian's mythic trait is active, it can use the options below as legendary actions for 1 hour after using Core of the Guardian."
+			],
+			"mythic": [
+				{
+					"name": "Scorching Burst (costs 3 actions)",
+					"entries": [
+						"The guardian points Its cannon and 30 ft. cone of arcane fire erupts from it. Each creature in the area must make a {@dc 16} Dexterity saving throw, taking 28 ({@damage 8d6}). The guardian can't use the cannon attack until the end of it's next turn"
+					]
+				},
+				{
+					"name": "Quake Slam (costs 2 action)",
+					"entries": [
+						"The guardian slams its foot on the ground, creating a strong tremor. Each creature in a 10 ft. radius must make a {@dc 17} Constitution saving throw or fall {@condition prone}."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/YzDD5rQ.jpeg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/OWvm4Bp.png",
+			"traitTags": [
+				"Regeneration"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Caurtoska",
+			"source": "NihirazNotebookofCreatures",
+			"size": "M",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "3d8 + 6",
+				"average": 19
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 14,
+			"int": 2,
+			"wis": 14,
+			"cha": 5,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Keen Sight and Smell",
+					"entries": [
+						"The caurtoska has advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/564x/5c/07/65/5c0765848bbd1a9898d3a7214d8701b4.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/olkS4Km.png",
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Tilpan",
+			"source": "NihirazNotebookofCreatures",
+			"size": "T",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 3,
+				"formula": "1d6"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 40,
+				"canHover": false
+			},
+			"str": 2,
+			"dex": 16,
+			"con": 10,
+			"int": 2,
+			"wis": 14,
+			"cha": 10,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 30 ft."
+			],
+			"passive": 14,
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Familiar",
+					"entries": [
+						"With the DM's permission, the {@spell find familiar} spell can summon a tilpan."
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The tilpan has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/564x/82/c8/ad/82c8ad6c382e7ef4bc898e2bca06db5b.jpg"
+						}
+					}
+				]
+			},
+			"familiar": true,
+			"tokenUrl": "https://i.imgur.com/X5HWBva.png",
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Arboreobug",
+			"source": "NihirazNotebookofCreatures",
+			"size": "L",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d10 + 27",
+				"average": 76
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 5
+			},
+			"str": 15,
+			"dex": 7,
+			"con": 17,
+			"int": 2,
+			"wis": 11,
+			"cha": 4,
+			"senses": [
+				"tremorsense 30 ft."
+			],
+			"passive": 10,
+			"cr": "2",
+			"trait": [
+				{
+					"name": "False Appearance (Arboreobug)",
+					"entries": [
+						"While the arboreobug remains motionless with its body buried underground, it is indistinguishable from a tree."
+					]
+				},
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The arboreobug has advantage on attack rolls against any creature it has surprised."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The arboreobug makes two attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp"
+			],
+			"tokenUrl": "https://i.imgur.com/043Hwcq.png",
+			"traitTags": [
+				"Ambusher",
+				"False Appearance"
+			],
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Bismut Bull",
+			"source": "NihirazNotebookofCreatures",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 4,
+				"formula": "1d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "0",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/564x/f5/5b/58/f55b58054b90104ae94fa13f10e7a9f0.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Gnilvory",
+			"shortName": true,
+			"source": "NihirazNotebookofCreatures",
+			"size": "L",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 8",
+				"average": 52
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 13,
+			"int": 5,
+			"wis": 13,
+			"cha": 11,
+			"skill": {
+				"perception": "+3",
+				"intimidation": "+2"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The gnilvory has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The gnilvory has advantage on an attack roll against a creature if at least one of the gnilvory's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the gnilvory to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the gnilvory drops to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Stinger",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage. The target must make a {@dc 15} Constitution saving throw, taking 14 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"underdark"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/564x/aa/8f/fe/aa8ffe47e768e7702ced7cb0317661fc.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/HQvZGdG.png",
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics",
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		}
+	]
+}
