@@ -1,0 +1,1514 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "NihirazNotebookofCreatures",
+				"abbreviation": "NNC",
+				"full": "Nihiraz' Notebook of Creatures",
+				"url": "",
+				"authors": [
+					"Nihiraz"
+				],
+				"convertedBy": [
+					"Nihiraz"
+				]
+			}
+		],
+		"dateAdded": 1614274791,
+		"dateLastModified": 1614274791
+	},
+	"monster": [
+		{
+			"name": "Cannoneer Guardian",
+			"shortName": "guardian",
+			"source": "NihirazNotebookofCreatures",
+			"size": "L",
+			"type": "construct",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				},
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					],
+					"condition": "when Core of the Guardian is active"
+				}
+			],
+			"hp": {
+				"formula": "19d10 + 114",
+				"average": 218
+			},
+			"speed": {
+				"walk": {
+					"number": 20,
+					"condition": "(30 ft. when Core of the Guardian is active)"
+				}
+			},
+			"str": 20,
+			"dex": 9,
+			"con": 23,
+			"int": 10,
+			"wis": 13,
+			"cha": 3,
+			"save": {
+				"str": "+9",
+				"con": "+10"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"blindsight 10 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					]
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"Understands commands in any language but can't speak"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The guardian regains 15 hit points at the start of its turn if it has at least 1 hit point when Core of the Guardian isn't active."
+					]
+				},
+				{
+					"name": "Heated Body",
+					"entries": [
+						"When Core of the Guardian is active, a creature that touches the guardian or hits it with a melee attack while within 5 feet of it takes 5 ({@damage 1d10}) fire damage."
+					]
+				},
+				{
+					"name": "Core of the Guardain (Mythic Trait; Recharges after a Short or Long Rest).",
+					"entries": [
+						"When the guardian is reduced to 0 hit points, it doesn't die or fall {@condition unconscious}. Instead, the damage destroys itsheavy armor plates, revealing its burning arcane core, the guardian regains 218 hit points and moves up to its speed without provoking opportunity attacks.. While this trait is active the guardian has an AC of 16, a base walking speed of 30 ft., gains the Heated Body trait and loses the Regeneration trait. If it finishes a short or long rest, the guardian repairs its armor and loses this trait."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The guardian makes two attack."
+					]
+				},
+				{
+					"name": "Fist",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Cannon",
+					"entries": [
+						"{@atk rs} {@hit 8} to hit, range 60/240 ft., one target. {@h}11 ({@damage 2d6 + 4}) fire damage."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The guardian makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Fist",
+					"entries": [
+						"The guardian makes a fist attack."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The guardian moves up to its speed without provoking opportunity attacks."
+					]
+				}
+			],
+			"mythicHeader": [
+				"If the guardian's mythic trait is active, it can use the options below as legendary actions for 1 hour after using Core of the Guardian."
+			],
+			"mythic": [
+				{
+					"name": "Scorching Burst (costs 3 actions)",
+					"entries": [
+						"The guardian points Its cannon and 30 ft. cone of arcane fire erupts from it. Each creature in the area must make a {@dc 16} Dexterity saving throw, taking 28 ({@damage 8d6}). The guardian can't use the cannon attack until the end of it's next turn"
+					]
+				},
+				{
+					"name": "Quake Slam (costs 2 action)",
+					"entries": [
+						"The guardian slams its foot on the ground, creating a strong tremor. Each creature in a 10 ft. radius must make a {@dc 17} Constitution saving throw or fall {@condition prone}."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/YzDD5rQ.jpeg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/OWvm4Bp.png",
+			"traitTags": [
+				"Regeneration"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Caurtoska",
+			"source": "NihirazNotebookofCreatures",
+			"size": "M",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "3d8 + 6",
+				"average": 19
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 14,
+			"int": 2,
+			"wis": 14,
+			"cha": 5,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Keen Sight and Smell",
+					"entries": [
+						"The caurtoska has advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/564x/5c/07/65/5c0765848bbd1a9898d3a7214d8701b4.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/olkS4Km.png",
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Tilpan",
+			"source": "NihirazNotebookofCreatures",
+			"size": "T",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 3,
+				"formula": "1d6"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 40,
+				"canHover": false
+			},
+			"str": 2,
+			"dex": 16,
+			"con": 10,
+			"int": 2,
+			"wis": 14,
+			"cha": 10,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 30 ft."
+			],
+			"passive": 14,
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Familiar",
+					"entries": [
+						"With the DM's permission, the {@spell find familiar} spell can summon a tilpan."
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The tilpan has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 0} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/564x/82/c8/ad/82c8ad6c382e7ef4bc898e2bca06db5b.jpg"
+						}
+					}
+				]
+			},
+			"familiar": true,
+			"tokenUrl": "https://i.imgur.com/X5HWBva.png",
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Arboreobug",
+			"source": "NihirazNotebookofCreatures",
+			"size": "L",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d10 + 27",
+				"average": 76
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 5
+			},
+			"str": 15,
+			"dex": 7,
+			"con": 17,
+			"int": 2,
+			"wis": 11,
+			"cha": 4,
+			"senses": [
+				"tremorsense 30 ft."
+			],
+			"passive": 10,
+			"cr": "2",
+			"trait": [
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the arboreobug remains motionless with its body buried underground, it is indistinguishable from a tree."
+					]
+				},
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The arboreobug has advantage on attack rolls against any creature it has surprised."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The arboreobug makes two attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp"
+			],
+			"tokenUrl": "https://i.imgur.com/043Hwcq.png",
+			"traitTags": [
+				"Ambusher",
+				"False Appearance"
+			],
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Bismut Bull",
+			"group": "Gemmoid",
+			"source": "NihirazNotebookofCreatures",
+			"size": "H",
+			"type": {
+				"type": "elemental",
+				"tags": [
+					"gemmoid"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d12 + 30",
+				"average": 95
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 17,
+			"dex": 8,
+			"con": 16,
+			"int": 12,
+			"wis": 10,
+			"cha": 7,
+			"save": {
+				"str": "+6",
+				"con": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Crystallish"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"The bismut bull's innate spellcasting ability is Intelligence (spell save {@dc 12}). The bismut bullcan innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell lightning lure|TCE}",
+						"{@spell mage hand}"
+					],
+					"daily": {
+						"3": [
+							"{@spell catapult|XGE}",
+							"{@spell comprehend languages}",
+							"{@spell pass without trace}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Limited Telepathy",
+					"entries": [
+						"The bismut bull can magically communicate simple ideas, emotions, and images telepathically with any creature within 100 feet of it that can understand a language."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The bismut bull makes two claw attacks"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) damage."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/564x/f5/5b/58/f55b58054b90104ae94fa13f10e7a9f0.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/px1iddT.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"spellcastingTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Gnilvory",
+			"shortName": true,
+			"source": "NihirazNotebookofCreatures",
+			"size": "L",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 8",
+				"average": 52
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 13,
+			"int": 5,
+			"wis": 13,
+			"cha": 11,
+			"skill": {
+				"perception": "+3",
+				"intimidation": "+2"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The gnilvory has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The gnilvory has advantage on an attack roll against a creature if at least one of the gnilvory's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the gnilvory to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the gnilvory drops to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Stinger",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage. The target must make a {@dc 15} Constitution saving throw, taking 14 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"underdark"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/originals/9c/35/9d/9c359d8e92161966fd8120797c24eeb3.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/bMVG6Pg.png",
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics",
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Herald of Void, Nihiraz the Destroyer of Worlds",
+			"shortName": "Nihiraz",
+			"isNamedCreature": true,
+			"source": "NihirazNotebookofCreatures",
+			"size": "M",
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"voidborn"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				20
+			],
+			"hp": {
+				"formula": "50d8 + 200",
+				"average": 425
+			},
+			"speed": {
+				"walk": 120,
+				"fly": 720,
+				"canHover": false
+			},
+			"str": 30,
+			"dex": 30,
+			"con": 18,
+			"int": 18,
+			"wis": 23,
+			"cha": 20,
+			"save": {
+				"str": "+19",
+				"dex": "+19",
+				"con": "+13",
+				"cha": "+14"
+			},
+			"skill": {
+				"intimidation": "+23",
+				"perception": "+15",
+				"stealth": "+19",
+				"sleight of hand": "+19",
+				"survival": "+15",
+				"athletics": "+28",
+				"acrobatics": "+28"
+			},
+			"senses": [
+				"darkvision 120 ft.",
+				"truesight 120 ft."
+			],
+			"passive": 25,
+			"resist": [
+				{
+					"resist": [
+						"fire"
+					]
+				},
+				{
+					"resist": [
+						"poison"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					]
+				}
+			],
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"stunned"
+			],
+			"languages": [
+				"all"
+			],
+			"cr": "30",
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Nihiraz regains 10 hit points at the start of its turn if it has at least 1 hit point."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"Nihiraz gains a new body in {@dice 1d10} days, regaining all its hit points and becoming active again. The new body appears in the Void."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration",
+				"Rejuvenation"
+			],
+			"senseTags": [
+				"SD",
+				"U"
+			],
+			"languageTags": [
+				"XX"
+			]
+		},
+		{
+			"name": "Crystalling Warrior",
+			"shortName": "crystalling",
+			"group": "Crystallings",
+			"source": "NihirazNotebookofCreatures",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"crystalling"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 4",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 13,
+			"int": 12,
+			"wis": 11,
+			"cha": 10,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Crystallish"
+			],
+			"cr": "1/4",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The crystalling can innately cast {@spell dancing lights}, requiring no material components. Its innate spellcasting ability is Intelligence."
+					],
+					"ability": "int",
+					"hidden": [
+						"will"
+					],
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, or 6 ({@damage 1d8 + 2}) piercing damage if used with two hands to make a melee attack."
+					]
+				},
+				{
+					"name": "Sling",
+					"entries": [
+						"{@atk rw} {@hit 2} to hit, range 30/120 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/VNZbHur.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Crystalling Shaman",
+			"shortName": "crystalling",
+			"group": "Crystallings",
+			"source": "NihirazNotebookofCreatures",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"crystalling"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					],
+					"condition": "(16 with {@spell barkskin})"
+				}
+			],
+			"hp": {
+				"formula": "15d8",
+				"average": 67
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 13,
+			"con": 10,
+			"int": 13,
+			"wis": 18,
+			"cha": 10,
+			"save": {
+				"wis": "+7"
+			},
+			"skill": {
+				"nature": "+4",
+				"survival": "+7",
+				"perception": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical attacks"
+				}
+			],
+			"languages": [
+				"Crystallish",
+				"Druidic"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The crystalling can innately cast {@spell dancing lights}, requiring no material components. Its innate spellcasting ability is Intelligence."
+					],
+					"ability": "int",
+					"hidden": [
+						"will"
+					],
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The crystalling is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It has the following druid spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell frostbite|XGE}",
+								"{@spell magic stone|XGE}",
+								"{@spell mold earth|XGE}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell animal friendship}",
+								"{@spell cure wounds}",
+								"{@spell entangle}",
+								"{@spell storm spear|NihirazNotebookofCreatures}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell barkskin}",
+								"{@spell flame blade}",
+								"{@spell pass without trace}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell conjure animals}",
+								"{@spell meld into stone}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Stone Resilience",
+					"entries": [
+						"The crystalling has advantage on saving throws against poison,  as well as to resist being {@condition charmed} or {@condition paralyzed}."
+					]
+				},
+				{
+					"name": "Earth Walk",
+					"entries": [
+						"Moving through difficult terrain made of earth or stone costs the crystalling no extra movement."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Staff",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) damage, or 4 ({@damage 1d8}) damage if used with both hands."
+					]
+				},
+				{
+					"name": "Stone Abjuration (1/long rest)",
+					"entries": [
+						"The crystalling hurls the power of the earth to protect his kind in battle. For 10 minutes, the crystals on the skin of up to three crystallings within the shaman grow and harden, giving them extra defence against physical blows. For the duration, the targets gains resistance to bludgeoning, piercing, and slashing from non-magical attacks."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Semi-reflective Crystals (3/long rest)",
+					"entries": [
+						"When the crystalling take damage from a line spell or a spell that requires a ranged attack roll, it can attempt to redirect the magical energy against a target within 60 feet of them. That creature must succeed on a {@dc 15} Dexterity Saving Throw. On a failure the target takes radiant damage equal to {@damage 1d8 + 5}"
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://i.imgur.com/YJ1LQZ3.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"DU"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CD",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Angassik",
+			"source": "NihirazNotebookofCreatures",
+			"size": "S",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "2d6",
+				"average": 7
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 30
+			},
+			"str": 5,
+			"dex": 15,
+			"con": 11,
+			"int": 1,
+			"wis": 10,
+			"cha": 3,
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"passive": 10,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, the angassik can take the {@action Hide} action as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage, and the target must make a {@dc 10} Constitution saving throw, taking 5 ({@damage 2d4}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1ac2b8f6-ed73-4e6f-8513-1a63c1fafc92/d1klbtv-f256a2e1-a109-4124-b421-3560b38152f7.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMWFjMmI4ZjYtZWQ3My00ZTZmLTg1MTMtMWE2M2MxZmFmYzkyXC9kMWtsYnR2LWYyNTZhMmUxLWExMDktNDEyNC1iNDIxLTM1NjBiMzgxNTJmNy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.MGSrbCcnMhG63ET1eiHUyFp_b7YOZ6gJb-6Cb15PgvM"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/yF8ZYDw.png",
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Dreamweaver Hawkmoth",
+			"shortName": "hawkmoth",
+			"source": "NihirazNotebookofCreatures",
+			"size": "L",
+			"type": "fey",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				15,
+				{
+					"ac": 18,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 48",
+				"average": 136
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 9,
+			"dex": 21,
+			"con": 17,
+			"int": 14,
+			"wis": 17,
+			"cha": 18,
+			"save": {
+				"cha": "+8",
+				"wis": "+7",
+				"dex": "+9"
+			},
+			"skill": {
+				"perception": "+7",
+				"persuasion": "+8",
+				"nature": "+6"
+			},
+			"senses": [
+				"darkvision 300 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"psychic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"languages": [
+				"Sylvan",
+				"Druidic"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The hawkmoth is a 9th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It requires no material components to cast its spells. The hawkmoth has the following bard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell message}",
+								"{@spell minor illusion}",
+								"{@spell vicious mockery}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell charm person}",
+								"{@spell cure wounds}",
+								"{@spell heroism}",
+								"{@spell sleep}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell calm emotions}",
+								"{@spell invisibility}",
+								"{@spell silence}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell catnap|XGE}",
+								"{@spell hypnotic pattern}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell charm monster|XGE}",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell dream}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The hawkmoth's innate spellcasting ability is Wisdom. The hawkmoth can innately cast the following spells, requiring no material components."
+					],
+					"will": [
+						"{@spell mage armor} (self only)",
+						"{@spell plane shift} (self only)"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The hawkmoth has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Chant of Good Luck (1/day)",
+					"entries": [
+						"The hawkmoth whispers its chant, that takes 10 minutes to perform. When the song ends every creature within 30 feet of the hawkmoth must succeed on a {@dc 14} Wisdom Saving Throw or fall {@condition unconscious}. A creature can fail the saving throw voluntarily if it wants to be affected. After 4 hours the affected creatures wake up getting all the benefits of a long rest. Furthermore, the creatures gains a +2 bonus to all ability checks and saving throws, including Death Saving Throws. These benefits last for 24 hours."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hawkmoth makes four spell attacks. "
+					]
+				},
+				{
+					"name": "Ethereal Rapier",
+					"entries": [
+						"{@atk ms} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) radiant damage."
+					]
+				},
+				{
+					"name": "Moonlight dart",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, range 30/120 ft., one target. {@h}4 ({@damage 1d6}) radiant damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdna.artstation.com/p/assets/images/images/012/357/710/large/b-mezzanotte-lorkhan-artstationmoth-warrior.jpg?1534374392"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/N43m9im.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"DU",
+				"S"
+			],
+			"damageTags": [
+				"R"
+			],
+			"spellcastingTags": [
+				"CB",
+				"I"
+			],
+			"conditionInflict": [
+				"unconscious"
+			]
+		},
+		{
+			"name": "Nightshade Wyvern",
+			"shortName": true,
+			"isNamedCreature": true,
+			"source": "NihirazNotebookofCreatures",
+			"size": "L",
+			"type": "dragon",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d10 + 39",
+				"average": 110
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 100,
+				"canHover": false
+			},
+			"str": 9,
+			"dex": 19,
+			"con": 16,
+			"int": 8,
+			"wis": 12,
+			"cha": 9,
+			"save": {
+				"dex": "+7",
+				"con": "+6"
+			},
+			"skill": {
+				"perception": "+4",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 14,
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The nightshade wyvern has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Sunlight Weakness",
+					"entries": [
+						"While in sunlight, the Nightshade Wyvern has disadvantage on attack rolls, ability checks, and saving throws."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The nightshade wyvern makes three attacks: one with it's bite and two with it's claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage. The target must make a {@dc 15} Constitution saving throw, taking 5 ({@damage 1d10}) necrotic damage on a failed save."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Umbreal Dive {@recharge 5}",
+					"entries": [
+						"If the nightshade wyvern is flying and dives at least 50 feet straight toward the ground, it can use this action. The nightshade wyvern then moves 60 feet in any direction, forming a 60 feet long and 20 feet wide area and without expending movement. Each creature in the area must make a {@dc 15} Dexterity saving throw taking 55 ({@damage 10d10}) necrotic on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"variant": [
+				{
+					"name": "Ethereal Nightshade Wyvern",
+					"entries": [
+						"Sometimes a nightshade wyvern shows a stronger Shadowfell influence, being able to manifest a partial etherealness. ",
+						"An ethereal nightshade wyvern is a normal nightshade wyvern with a challenge rate of 11 (7,200 XP), immunity to bludgeoning, piercing and slashing damage from non-magical attacks, and the following additional trait:",
+						{
+							"type": "entries",
+							"name": "Shadow Stealth",
+							"entries": [
+								"While in dim light or darkness, the Nightshade Wyvern can take the {@action Hide} action as a bonus action."
+							]
+						}
+					],
+					"type": "variant"
+				}
+			],
+			"environment": [
+				"arctic",
+				"desert",
+				"grassland",
+				"hill"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/23d8f2d8-82fa-4810-a57a-d1e91e3402c1/d9s4paz-1f1b08a0-bafb-4850-9168-0eaf97bd17dd.jpg/v1/fill/w_1143,h_699,q_70,strp/quick_drakhan_sketch_4___losomaer_by_drak_arts_d9s4paz-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xNTAwIiwicGF0aCI6IlwvZlwvMjNkOGYyZDgtODJmYS00ODEwLWE1N2EtZDFlOTFlMzQwMmMxXC9kOXM0cGF6LTFmMWIwOGEwLWJhZmItNDg1MC05MTY4LTBlYWY5N2JkMTdkZC5qcGciLCJ3aWR0aCI6Ijw9MjQ1MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.wau-LK9nwJm2Nbe_V9h3G0pjql52RCsB5eaFUlwIN68"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/VDGoVly.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		}
+	]
+}
